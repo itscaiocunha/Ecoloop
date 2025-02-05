@@ -75,8 +75,7 @@ export function Benefits() {
               className="w-full max-w-3xl h-64 md:h-96 rounded-lg shadow-lg"
               src="https://w7startup.com.br/img/video_institucional.mp4"
               title="Vídeo sobre a solução de reciclagem"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
               allowFullScreen>
             </iframe>
           </div>
