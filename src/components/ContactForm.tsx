@@ -23,12 +23,12 @@ export function ContactForm() {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="contact-form" className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Pronto para Transformar sua Empresa em uma Referência em Sustentabilidade?
+              Pronto para transformar sua empresa em uma referência em sustentabilidade?
             </h2>
             <p className="text-lg text-gray-600">
               Entre em contato conosco e descubra como podemos ajudar sua empresa.
@@ -96,7 +96,7 @@ export function ContactForm() {
               type="submit"
               className="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition"
             >
-              Solicitar Orçamento
+              Solicitar orçamento
             </button>
           </form>
         </div>

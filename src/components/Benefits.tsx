@@ -4,38 +4,38 @@ const benefits = [
   {
     icon: Leaf,
     title: 'Sustentabilidade',
-    description: 'Demonstre seu compromisso com práticas ESG e contribua para um futuro mais sustentável.'
+    description: 'Promova a economia circular ao garantir a destinação correta dos resíduos e reduzir o impacto ambiental do descarte inadequado.'
   },
   {
     icon: DollarSign,
     title: 'Economia',
-    description: 'Reduza custos operacionais e de descarte com nossa solução integrada.'
+    description: 'Redução de custos de logística reversa e atenção às legislações ambientais, além de agregar valor à marca e atrair consumidores conscientes.'
   },
   {
     icon: Users,
     title: 'Engajamento Social',
-    description: 'Atraia e fidelize consumidores ao promover práticas sustentáveis.'
+    description: 'Incentive a participação da comunidade e das empresas em práticas sustentáveis, criando um impacto social positivo.'
   },
   {
     icon: Award,
     title: 'Impacto Positivo',
-    description: 'Fortaleça a imagem da sua marca com ações concretas de sustentabilidade.'
+    description: 'Transforme hábitos de descarte, reduzindo a poluição e melhorando a qualidade de vida das cidades'
   }
 ];
 
 const features = [
   {
-    title: 'Integração Completa',
-    description: 'Compatível com sistemas corporativos existentes e fluxo de trabalho'
+    title: 'Ecovision - Tecnologia de IA',
+    description: 'A tecnologia proprietária identifica e classifica embalagens, mesmo danificadas ou sem rótulo, garantindo alta precisão no reconhecimento dos resíduos.'
   },
   {
-    title: 'Tecnologia Avançada',
-    description: 'Sistema automatizado com IA para identificação e separação precisa de materiais'
+    title: 'Econet - Monitoramento em tempo real',
+    description: 'A conexão 4G permite acompanhar remotamente o status das máquinas, otimizando a logística de coleta e reduzindo custos operacionais.'
   },
-  {
-    title: 'Dados em Tempo Real',
-    description: 'Monitoramento e relatórios detalhados para tomada de decisão'
-  }
+    {
+    title: 'Gamificação e Recompensas',
+    description: 'A plataforma integrada permite pontuação, cashback e doações, tornando o descarte de resíduos uma experiência engajadora e incentivando maior adesão dos consumidores.'
+  }  
 ];
 
 export function Benefits() {
@@ -44,7 +44,7 @@ export function Benefits() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Por que Adotar a Solução da Ecoloop?
+            Por que adotar a solução da Ecoloop?
           </h2>
           <p className="text-lg text-gray-600">
             Descubra como nossas máquinas de reciclagem podem transformar sua empresa
@@ -58,7 +58,7 @@ export function Benefits() {
                 <benefit.icon className="h-6 w-6 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">{benefit.title}</h3>
-              <p className="text-gray-600 text-sm">{benefit.description}</p>
+              <p className="text-gray-600 text-sm text-justify">{benefit.description}</p>
             </div>
           ))}
         </div>
@@ -73,7 +73,7 @@ export function Benefits() {
           <div className="flex justify-center mb-12">
             <iframe 
               className="w-full max-w-3xl h-64 md:h-96 rounded-lg shadow-lg"
-              src="https://youtu.be/9KZyUQpihsE?si=hWbgwbgOuMyaVGPi"
+              src="https://w7startup.com.br/img/video_institucional.mp4"
               title="Vídeo sobre a solução de reciclagem"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -85,7 +85,7 @@ export function Benefits() {
             {features.map((feature, index) => (
               <div key={index} className="bg-white p-6 rounded-lg">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
-                <p className="text-gray-600 text-sm">{feature.description}</p>
+                <p className="text-gray-600 text-sm text-justify">{feature.description}</p>
               </div>
             ))}
           </div>

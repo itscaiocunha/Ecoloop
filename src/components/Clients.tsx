@@ -31,7 +31,7 @@ export function Clients() {
             Empresas que já confiam na Ecoloop
           </h2>
           <p className="text-lg text-gray-600">
-            Junte-se a mais de 200 empresas que já transformaram sua gestão de resíduos
+            Mais de 200 máquinas que transformaram a gestão de resíduos das empresas
           </p>
         </div>
 

@@ -1,4 +1,4 @@
-import { Recycle, MapPin, Phone, Mail, Linkedin, Instagram, Facebook, Twitter } from 'lucide-react';
+import { MapPin, Phone, Mail, Linkedin, Instagram } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -7,8 +7,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <Recycle className="h-8 w-8" />
-              <span className="text-2xl font-bold">Ecoloop</span>
+              <img src="https://w7startup.com.br/img/ecoloop_logo.png" alt="" />
             </div>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
@@ -27,37 +26,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg mb-4">Links Úteis</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white">Sobre Nós</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Blog</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Carreiras</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-lg mb-4">Legal</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white">Política de Privacidade</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Termos de Uso</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">LGPD</a></li>
-            </ul>
-          </div>
-
-          <div>
             <h4 className="font-semibold text-lg mb-4">Redes Sociais</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white">
+              <a href="https://www.linkedin.com/company/ecoloop-br/" className="text-gray-300 hover:text-white">
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white">
+              <a href="https://www.instagram.com/ecoloop.br/" className="text-gray-300 hover:text-white">
                 <Instagram className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <Twitter className="h-6 w-6" />
               </a>
             </div>
           </div>
