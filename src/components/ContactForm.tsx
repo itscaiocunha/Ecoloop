@@ -23,14 +23,14 @@ export function ContactForm() {
   };
 
   return (
-    <section id="contact-form" className="py-16 bg-gray-50">
+    <section id="contact-form" className="py-16 bg-gray-50" style={{ backgroundImage: 'url(/fundo.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: 'Nunito, sans-serif' }}>
               Pronto para transformar sua empresa em uma referência em sustentabilidade?
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-100" style={{ fontFamily: 'Roboto, sans-serif' }}>
               Entre em contato conosco e descubra como podemos ajudar sua empresa.
             </p>
           </div>

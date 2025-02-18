@@ -32,31 +32,33 @@ export function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-16">
+    <section id="faq" className="py-16 bg-[#404041]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-gray-100 mb-4" style={{ fontFamily: 'Nunito, sans-serif' }}>
             Perguntas Frequentes
           </h2>
         </div>
 
         <div className="max-w-3xl mx-auto space-y-4">
           {faqItems.map((item) => (
-            <div key={item.id} className="border border-gray-200 rounded-lg">
+            <div key={item.id} className="border border-gray-100 rounded-lg">
               <button
                 className="w-full px-6 py-4 text-left flex items-center justify-between focus:outline-none"
                 onClick={() => toggleFAQ(item.id)}
               >
-                <span className="font-semibold text-gray-900">{item.question}</span>
+                <span className="font-semibold text-gray-100" style={{ fontFamily: 'Roboto, sans-serif' }}>
+                  {item.question}
+                </span>
                 <ChevronDown
-                  className={`h-5 w-5 text-gray-500 transition-transform ${
-                    isOpen[item.id] ? 'transform rotate-180' : ''
-                  }`}
+                  className={`h-5 w-5 text-gray-100 transition-transform ${isOpen[item.id] ? 'transform rotate-180' : ''}`}
                 />
               </button>
               {isOpen[item.id] && (
                 <div className="px-6 pb-4">
-                  <p className="text-gray-600">{item.answer}</p>
+                  <p className="text-gray-100" style={{ fontFamily: 'Roboto, sans-serif' }}>
+                    {item.answer}
+                  </p>
                 </div>
               )}
             </div>

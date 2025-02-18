@@ -32,7 +32,7 @@ const features = [
     title: 'Econet - Monitoramento em tempo real',
     description: 'A conexão 4G permite acompanhar remotamente o status das máquinas, otimizando a logística de coleta e reduzindo custos operacionais.'
   },
-    {
+  {
     title: 'Gamificação e Recompensas',
     description: 'A plataforma integrada permite pontuação, cashback e doações, tornando o descarte de resíduos uma experiência engajadora e incentivando maior adesão dos consumidores.'
   }  
@@ -40,13 +40,13 @@ const features = [
 
 export function Benefits() {
   return (
-    <section id="benefits" className="py-16 bg-gray-50">
+    <section id="benefits" className="py-16 bg-gray-50" style={{ backgroundImage: 'url(/fundo.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: 'Nunito, sans-serif' }}>
             Por que adotar a solução da Ecoloop?
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-white" style={{ fontFamily: 'Roboto, sans-serif' }}>
             Descubra como nossas máquinas de reciclagem podem transformar sua empresa
           </p>
         </div>
@@ -57,15 +57,15 @@ export function Benefits() {
               <div className="mb-4">
                 <benefit.icon className="h-6 w-6 text-green-600" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{benefit.title}</h3>
-              <p className="text-gray-600 text-sm text-justify">{benefit.description}</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: 'Nunito, sans-serif' }}>{benefit.title}</h3>
+              <p className="text-gray-600 text-sm text-justify" style={{ fontFamily: 'Roboto, sans-serif' }}>{benefit.description}</p>
             </div>
           ))}
         </div>
 
         <div className="mt-16">
           <div className="text-center mb-8">
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-100" style={{ fontFamily: 'Roboto, sans-serif' }}>
               Veja como nossa solução de reciclagem automatizada está transformando a gestão de resíduos em grandes corporações.
             </p>
           </div>
@@ -83,8 +83,8 @@ export function Benefits() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="bg-white p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
-                <p className="text-gray-600 text-sm text-justify">{feature.description}</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: 'Nunito, sans-serif' }}>{feature.title}</h3>
+                <p className="text-gray-600 text-sm text-justify" style={{ fontFamily: 'Roboto, sans-serif' }}>{feature.description}</p>
               </div>
             ))}
           </div>

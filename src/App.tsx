@@ -15,8 +15,8 @@ function App() {
       <Benefits />
       <Clients />
       <Testimonials />
-      <ContactForm />
       <FAQ />
+      <ContactForm />
       <Footer />
     </div>
   );
